@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monst";
+}
+@font-face {
+  font-family: "Monst";
+  src: url(Font/montserrat/Montserrat-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Dancer";
+  src: url(Font/Dancing_Script/static/DancingScript-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Monst-bold";
+  src: url(Font/montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo h1 {
+  font-family: "Dancer";
+  font-size: 40px;
+  color: white;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+p {
+  color: #555;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.column {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.column img {
+  max-width: 100%;
+  padding: 50px 0;
+  padding-left: 100px;
+}
+
+.column h1 {
+  font-size: 40px;
+  line-height: 60px;
+  margin: 25px 0;
+  font-family: "Monst-bold";
+}
+.button {
+  display: inline-block;
+  background-color: #1b8d7c;
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.8s;
+}
+
+.button:hover {
+  background-color: #0c463d;
+}
+
+.header {
+  background: radial-gradient(#c2f5ef, #1ca590);
+}
+.categories {
+  margin: 70px 0;
+}
+
+.column-2 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.column-2 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.title::after {
+  content: " ";
+  background: #0c463d;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
+.column-3 p {
+  font-size: 14px;
+}
+
+.column-3 {
+  flex-basis: 25%;
+  padding: 20px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.column-3 img {
+  width: 100%;
+}
+
+.column-3:hover {
+  transform: translateY(-5px);
+}
+
+.rating {
+  display: inline-flex;
+  max-width: 25px;
+  margin: auto;
+  padding: 4px;
+}
+
+.rating img {
+  width: 100%;
+  padding-left: 5px;
+}
