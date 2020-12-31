@@ -3,6 +3,7 @@
   <head>
     <title>Morpharma | Pharmaceutical Store</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="header">
@@ -12,15 +13,21 @@
             <h1>Morpharma</h1>
           </div>
           <nav>
-            <ul>
+            <ul id="menuItem">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
+              <li><a href="">Services</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="">Account</a></li>
             </ul>
           </nav>
           <img src="Images/shopping-cart.png" width="25" />
+          <img
+            src="Images\menu.png"
+            class="header-menu"
+            onclick="headerMenuToggle()"
+          />
         </div>
 
         <div class="row">
@@ -108,6 +115,287 @@
           <p>₦5190</p>
         </div>
       </div>
+
+      <!--___________________________________________Products___________________________________________-->
+      <h2 class="title">Improve Your Vitality!</h2>
+      <div class="row">
+        <div class="column-3">
+          <img src="Images\astyfer-syrup.png" />
+          <h4>Fidson Astyfer Syrup</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦3990</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\beehive-balsam-cough-syrup-200ml.jpg" />
+          <h4>Beehive Balsam Cough Syrup 200ml</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦1090</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\calcimax.jpg" />
+          <h4>Calcimax Suspension</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦1290</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\wellman-sport.jpg" />
+          <h4>Wellman Sport</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦3890</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column-3">
+          <img src="Images\pregnacare-conceptionusethispackshot_580x.png" />
+          <h4>Pregnacare Conception</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦5190</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\CHILDREN_PANADOL_SYRUP_455X455.jpg" />
+          <h4>Children Panadol Syrup</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦1090</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\mb-rophegan-elixir-syrup-60ml.jpg" />
+          <h4>MB Rophegan Elixir Syrup 60ml</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦4990</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\Brufen6001PPS0.jpg" />
+          <h4>Brufen Syrup</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦4990</p>
+        </div>
+      </div>
     </div>
+
+    <!--___________________________________________Products___________________________________________-->
+    <div class="offer">
+      <div class="row">
+        <div class="column">
+          <img src="Images\onedropwatch.png" class="offer-image" />
+        </div>
+        <div class="column">
+          <p>Monitor Your Glucose with your Smart Watch</p>
+          <h1>One Drop</h1>
+          <small
+            >Clinically effective and FDA approved, the One Drop
+            Bluetooth-enabled glucose meter sets the standard for simple,
+            effective diabetes self-care. Get a reading in just five seconds.
+            Starter kit includes glucose meter, lancing device, carry case, test
+            strips (25), and lancets (10). This is an mg/dL meter.</small
+          >
+          <div><a href="" class="button">Buy Now &#8594;</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!--__________________________________________Testimonials___________________________________________-->
+    <div class="testimonials">
+      <div class="small-container">
+        <div class="row">
+          <div class="column-2">
+            <img src="Images\left-quote.png" class="quote" />
+            <p>
+              Morpharma has helped my family and I secure quality drugs
+              prescribed by our family doctor. It has improved the ease of
+              refilling medications and filling prescriptions. We rate Morpharma
+              as the one of the best Online Pharmacies out there
+            </p>
+            <div class="rating test-heart">
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red-half.png" />
+            </div>
+            <img src="Images\oldwomanhappy.jpg" class="testimonial-image" />
+            <h3>Mrs Anita Nwankwo</h3>
+          </div>
+
+          <div class="column-2">
+            <img src="Images\left-quote.png" class="quote" />
+            <p>
+              Morpharma as improved the quality of life for my patients allowing
+              me to offer quality drugs to my patients as they require and
+              Making it easy to procure drugs. Morpharma has indeed Improved the
+              quality of my life.
+            </p>
+            <div class="rating test-heart">
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red-half.png" />
+            </div>
+            <img src="Images\doctor-man.png" class="testimonial-image" />
+            <h3>Dr. Bishop Onyema</h3>
+          </div>
+
+          <div class="column-2">
+            <img src="Images\left-quote.png" class="quote" />
+            <p>
+              Morpharma no dey waste time! them dey even supply for holiday
+              period, I never see this kin thing before.
+            </p>
+            <div class="rating test-heart">
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red.png" />
+              <img src="Images\heart-rating-red-half.png" />
+            </div>
+            <img
+              src="Images\Uju ojinnaka-Traders of Africa.jpg"
+              class="testimonial-image"
+            />
+            <h3>Mrs Uju Okafor</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--___________________________________________Brands___________________________________________-->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="column-4">
+            <img src="Images\Pfizer.svg.png" />
+          </div>
+
+          <div class="column-4">
+            <img src="Images\1280px-Siemens_Healthineers_logo.svg.png" />
+          </div>
+
+          <div class="column-4">
+            <img src="Images\ng-maybak-logo.png" />
+          </div>
+
+          <div class="column-4">
+            <img src="Images\sanofi-aventis-logo-vector.png" />
+          </div>
+
+          <div class="column-4">
+            <img src="Images\emzor-logo-extract-2.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--___________________________________________Footer___________________________________________-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-column">
+            <h3>Download Our App</h3>
+            <p>Download Our App for Android and IOS devices</p>
+            <div class="get-app">
+              <img src="Images\get-playstore.png" />
+              <img src="Images\get-appstore.png" />
+            </div>
+          </div>
+
+          <div class="footer-column-2">
+            <h3 class="footer-title">Morpharma</h3>
+            <p>
+              We believe in improving healthcare<br />
+              by collaboration and dedication
+            </p>
+          </div>
+
+          <div class="footer-column-3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Posts</li>
+              <li>Service Policy</li>
+            </ul>
+          </div>
+
+          <div class="footer-column-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <span class="copyright">Copyright G2M 2020</span>
+      </div>
+    </div>
+
+    <script>
+      var menuItems = document.getElementById("menuItem");
+      menuItems.style.maxHeight = "0px";
+
+      function headerMenuToggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
