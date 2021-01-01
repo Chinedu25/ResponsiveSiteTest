@@ -379,3 +379,7 @@ ul {
     flex-basis: 100%;
   }
 }
+
+.products-header {
+  background: linear-gradient(to right, #1ca590, #26ddc1);
+}

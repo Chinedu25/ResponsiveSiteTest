@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Morpharma | Pharmaceutical Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="products-header">
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo">
+            <h1>Morpharma</h1>
+          </div>
+          <nav>
+            <ul id="menuItem">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img src="Images/shopping-cart.png" width="25" />
+          <img
+            src="Images\menu.png"
+            class="header-menu"
+            onclick="headerMenuToggle()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--___________________________________________Products___________________________________________-->
+    <div class="small-container">
+      <h2 class="title">Stay Healthy!</h2>
+      <div class="row">
+        <div class="column-3">
+          <img src="Images\abedec.jpg" />
+          <h4>Abedec Immune Support</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦4990</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\astymin.png" />
+          <h4>Fidson Astymin Syrup</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦2990</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\em-vit-c-syrup-100ml.jpg" />
+          <h4>Em Vit C Syrup 100ml</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦990</p>
+        </div>
+
+        <div class="column-3">
+          <img src="Images\wellkid-baby-and-infant-syrup-150ml.jpg" />
+          <h4>Wellkid Baby and Infant Syrup 150ml</h4>
+          <div class="rating">
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red.png" />
+            <img src="Images\heart-rating-red-half.png" />
+          </div>
+          <p>₦5190</p>
+        </div>
+      </div>
+    </div>
+
+    <!--___________________________________________Footer___________________________________________-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-column">
+            <h3>Download Our App</h3>
+            <p>Download Our App for Android and IOS devices</p>
+            <div class="get-app">
+              <img src="Images\get-playstore.png" />
+              <img src="Images\get-appstore.png" />
+            </div>
+          </div>
+
+          <div class="footer-column-2">
+            <h3 class="footer-title">Morpharma</h3>
+            <p>
+              We believe in improving healthcare<br />
+              by collaboration and dedication
+            </p>
+          </div>
+
+          <div class="footer-column-3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Posts</li>
+              <li>Service Policy</li>
+            </ul>
+          </div>
+
+          <div class="footer-column-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <span class="copyright">Copyright G2M 2020</span>
+      </div>
+    </div>
+
+    <script>
+      var menuItems = document.getElementById("menuItem");
+      menuItems.style.maxHeight = "0px";
+
+      function headerMenuToggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
