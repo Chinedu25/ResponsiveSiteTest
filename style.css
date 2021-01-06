@@ -389,6 +389,9 @@ ul {
         line-height: 28px;
         font-size: 26px;
     }
+    .cart-info p {
+        display: none;
+    }
 }
 
 .products-header {
@@ -525,4 +528,57 @@ input:focus {
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #0c463d;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: red;
+    font-size: 12px;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total-price table {
+    border-top: 4px solid #0c463d;
+    width: 100%;
+    max-width: 380px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
 }
