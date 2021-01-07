@@ -395,7 +395,7 @@ ul {
 }
 
 .products-header {
-    background: linear-gradient(to right, #1ca590, #26ddc1);
+    background: linear-gradient(to right, #1ea692, #2cad99, #3eb6a4, #53c0af, #60c5b6, #6fccc0);
 }
 
 .search-box {
@@ -581,4 +581,83 @@ td:last-child {
 
 th:last-child {
     text-align: right;
+}
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#c2f5ef, #1ca590);
+}
+
+.form-container {
+    background: #cef7f2;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0px 30px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-button {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 400px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 0.5s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 2px solid #0c463d;
+}
+
+form .button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .button:focus {
+    outline: none;
+}
+
+#login-form {
+    left: -400px;
+}
+
+#register-form {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #0c463d;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(120px);
+    transition: transform 0.5s;
 }

@@ -13,16 +13,18 @@
             <h1>Morpharma</h1>
           </div>
           <nav>
-            <ul id="menuItem">
+            <ul id="menuItem" class="menu_item">
               <li><a href="index.html">Home</a></li>
-              <li><a href="">Products</a></li>
+              <li><a href="products.html">Products</a></li>
               <li><a href="">Services</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
+              <li><a href="account.html">Account</a></li>
             </ul>
           </nav>
-          <img src="Images/shopping-cart.png" width="25" />
+          <a href="shopping_cart.html">
+            <img src="Images/shopping-cart.png" width="25" />
+          </a>
           <img
             src="Images\menu.png"
             class="header-menu"
@@ -39,6 +41,27 @@
         <div class="row">
           <div class="column">
             <img src="Images\MomSon2.png" />
+          </div>
+
+          <div class-"column">
+          <div class="form-container">
+            <div class="form-button">
+              <span onclick="login()">Login</span>
+              <span onclick="register()">Register</span>
+              <hr id="Indicator" />
+            </div>
+            <form id="login-form">
+              <input type="text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <button type="submit" class="button">Login</button>
+              <a href="">Forgot Password</a>
+            </form>
+            <form id="register-form">
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <button type="submit" class="button">Register</button>
+            </form>
           </div>
         </div>
       </div>
@@ -99,6 +122,24 @@
         } else {
           menuItems.style.maxHeight = "0px";
         }
+      }
+    </script>
+
+    <script>
+      var loginForm = document.getElementById("login-form");
+      var registerForm = document.getElementById("register-form");
+      var indicator = document.getElementById("Indicator");
+
+      function login() {
+        registerForm.style.transform = "translateX(400px)";
+        loginForm.style.transform = "translateX(400px)";
+        indicator.style.transform = "translateX(0px)";
+      }
+
+      function register() {
+        registerForm.style.transform = "translateX(0px)";
+        loginForm.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(120px)";
       }
     </script>
   </body>
